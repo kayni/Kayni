@@ -180,9 +180,10 @@
 
             // bind click event
             $folioItems.each(function(i) {
-
+                
                 $(this).on('click', function(e) {
-                    e.preventDefault();
+                    // console.log(e)
+                    // e.preventDefault();
                     var options = {
                         index: i,
                         showHideOpacity: true
@@ -190,7 +191,7 @@
 
                     // initialize PhotoSwipe
                     var lightBox = new PhotoSwipe($pswp, PhotoSwipeUI_Default, items, options);
-                    lightBox.init();
+                    // lightBox.init();
                 });
 
             });
